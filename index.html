@@ -1,52 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lernatino// Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css\styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lernatino// Full Stack Developer</title>
+        <link rel="stylesheet" href="style.css\styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    </head>
+
 <body>
-        <!-- HEADER -->
+    <!--main logo / nav-->
+
     <header>
-        <a href="/"><h1> Loretta Williams</h1></a>
+        <h1>Lafon Tyrone Clark</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#">Resume</a>
-                </li>
-            </ul>
+            <a href="#about"><span>About Me</span></a>
+            <a href="#work"><span>Substantaited Work</span></a>
+            <a href="#contact"><span>Contact Information</span></a>
+            <!--Link to resume-->
+            <a href="index.html"><span>Resume|References</span></a>
         </nav>
     </header>
+</body>
 
-        <!-- MAiN -->
-    <main>
-        <section class="hero">
-                <img src="images\ProfilePic.jpg">
-            <div class="hero-text">
-                <h2>RUN Forrest Run</h2>
-            </div>
-        </section>
-                <!-- Page Grid Container -->
-            <div class="main-content-grid">
+<!--test comment-->
+<!--hero banner-->
 
-                    <!-- ABOUT ME -->
-                    <section id="about-me" class="about-me">
-                        <div class="title">
-                            <h1>Cool Beans!<br> Me</h1>
-                        </div>
-                        <p> My Nick Name Is John Satoshi Nakamoto. 
+<section class="hero-banner">
+    <div>
+        <h2>I Think Therefore I AM!</h2>
+    </div>
+</section>
+
+<main class="page-wrapper">
+            <!--about me-->
+    <section class="page-section" id="about">
+        <h2>About Me</h2>
+        <div>
+            <img src="images\ProfilePic.jpg" alt="ProfileShot"/>
+            <p>My Nick Name Is John Satoshi Nakamoto. 
                 Analysis of Malicious Document Files, Analyzing Protected Executables, and Analyzing Web-Based Malware
         
                 In-Depth Analysis of Malicious Browser Scripts and In-Depth Analysis of Malicious Executables
@@ -55,86 +48,69 @@
                 
                 Windows Assembly Code Concepts for Reverse-Engineering and Common Windows Malware Characteristics in Assembly
                 Patent Barrister
-             </p>
-             <p> My Nick Name Is John Satoshi Nakamoto. 
-                Analysis of Malicious Document Files, Analyzing Protected Executables, and Analyzing Web-Based Malware
-        
-                In-Depth Analysis of Malicious Browser Scripts and In-Depth Analysis of Malicious Executables
-                
-                Malware Analysis Using Memory 
-                        </p>
-                    </section>
-                    <!-- WORK -->
-                <section id="work" class="work">
+                Malware Analysis Using Memory???
+            </p>
+        </div>
+    </section>
 
-                    <h1>Substantiated Work Profile</h1>
 
-                        <div class="img-container">
-                        
-                            <img class="img-1 img-border" src="images\NodeVectors.jpg" alt="">
-                            <div class="img-1-text-position">
-                                <div class="work-img-text">        
-                                    <h3>Surf Report</h3>
-                                    <p>MERN Full-Stack</p>  
-                                </div>
-                            </div>
-                            <img class="img-2 img-border" src="images\Stuxnet.jpg" alt="">
-                            <div class="img-2-text-position">
-                                <div class="work-img-text">        
-                                    <h3>Red Team Operations</h3>
-                                    <p>x86</p>  
-                                </div>
-                            </div>
-                            <img class="img-3 img-border" src="images\RunForrestRun.jpg" alt="">
-                            <div class="img-3-text-position">
-                                <div class="work-img-text">        
-                                    <h3>Litigation Calculator</h3>
-                                    <p>React|Javascript|CSS</p>  
-                                </div>
-                            </div>
-                            <img class="img-4 img-border" src="images\PostQuantum.png" alt="">
-                            <div class="img-4-text-position">
-                                <div class="work-img    -text">        
-                                    <h3>Quantum Cryptography</h3>
-                                    <p>MATLAB|Javascript</p>  
-                                </div>
-                            </div>
-                            <img class="img-5 img-border" src="images\TheThinker.jpg" alt="">
-                            <div class="img-5-text-position">
-                                <div class="work-img-text">        
-                                    <h3>MERN | LAMP Portfolios</h3>
-                                    <p>LAMP | MERN</p>  
-                                </div>
-                            </div>
-                        </div>
-        
-                </section>
+    <!--portfolio grid-->
+    <section class="page-section" id="work">
+        <h2>Work History</h2>
+        <div class="grid-container">
 
-<!-- Publisher's Information -->
+            <a href="#" class="grid-item thinking">
+                <div>
+                    <h3> Surf Report</h3>
+                    <span>MERN Full-Stack</span>
+                </div>
+            </a>
+
+            <a href="#" class="grid-item led-stuxnet">
+                <div>
+                    <h3>Red Team Spec. Operations</h3>
+                    <span>x86</span>
+                </div>
+            </a>
+
+            <a href="#" class="grid-item runforrestrun">
+                <div>
+                    <h3>Litigation Calculator</h3>
+                    <span>React|Javascript|CSS</span>
+                </div>
+            </a>
+
+            <a href="#" class="grid-item postquantum">
+                <div>
+                    <h3>Quantum Cryptography</h3>
+                    <span>MATLAB</span>
+                </div>
+            </a>
+
+            <a href="#" class="grid-item node-vectors">
+                <div>
+                    <h3>MERN | LAMP Portfolios</h3>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!--contact-->
     <section class="page-section contact" id="contact">
-        <h2>Contact Me </h2>
+        <h2>
+            Hacking Shadow Hackers!
+        </h2>
         <div>
             <address>
-                <a href="tel:+155555555">6669913369</a>
-                <a href="mailto:learnjohn@cia.com">johncia@dna.com</a>
-                <a href="#Twitter" class="grid item Tron report">
-                <a href="#LinkedIn">LinkedIn</a>  
-                <a href="#Facebook">Contact Me</a>
-                <a href="#Instagram">Work</a>
-                <a href="#resume">Resume</a>
+                <a href="tel:+15555555555">6669913369</a>
+                <a href="mailto:blackutcoffee@gmail.com">Email</a>
+                <a href="https://github.com/blackutcoffee">GitHub</a>
+                <a href="https://instagram.com/">Instagram</a>
             </address>
         </div>
     </section>
 </main>
+</body>
 
-         <!-- footer -->
- <footer>
-    <h2>TradeMark: I Know That I Understand Nothing</h2>
-   
-      <a href="#">Read Our Privacy Policy</a>
-      <br/>
-   &copy; 2019 Williams Management Consulting, Inc.
-          </footer>
-  
-  </body>
 </html>
