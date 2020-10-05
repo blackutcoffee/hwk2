@@ -1,319 +1,280 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;    
-    font-family: cursive ;
-}
-h1, h2, h3, h4, h5, h6{
-    margin: 0
+    font-family: "Times New Roman", Times, serif;
 }
 
-
-
-/*Brand Colors*/
-:root {
-    --primary: rgb(68,88,119,1); 
-    --secondary:: rgb(146, 204, 206, 1); 
-    --tertiary:: rgb(49, 52,  61, 1); 
-    --dark:: rgb(28, 29, 33, 1); 
-    --light:: rgb(238, 238, 247, 1); 
-}
-
-
-
-
-/*Element Tags*/
-body{
-    background-color: orangered;
-    margin: 0;
-    padding: 15px 6% 15px 0; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--primary);
-    background-color: var(--light);
-    line-height: 1.5;
-    }
-
-header{
-    padding: 15px 6% 15px 0;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; 
+header {
     background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    background-color: var(--tertiary);
 }
-
 header h1 {
-    color: var(--tertiary);
-    background-color:#297c77 ;
-    font-size: 4vw; 
-    line-height: 1; 
-    margin: 0; 
-    padding: 5px 1% 5px 6%; 
-    font-weight: bold;
-    display: inline;
+    background-color: white;
+    color: black;
+    padding: 0px 10px 0px 50px;
 }
 header a {
     text-decoration: none;
-    color: #297c77;
-  }
-
-nav{
+    color: white;
+}
+header nav ul {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
     flex-wrap: wrap;
+    margin-right: 30px;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--secondary);
-    padding: 5px 10px;
-    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary)100%);
-    background-size: 100% 0.2rem;
-    background-repeat: no-repeat;
-    background-position: bottom; 
-    transition: all 0.25s ease-in;
-    font-size: 1.4rem;
-    
+header nav ul li a {
+    margin: 0 10px;
+    padding: 5px;
+    border-bottom: solid 2px white;
 }
-
-nav a:hover{
-    background-size: 100% 100%;
-    color: var(--primary);
-}
-
-nav a:last-child{
-    margin-right: 0;
-}
-
-
-main{
-    margin-top: 20px;
-    margin-bottom: 45px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Class Tags*/
-
-.about-me a {
-    margin: 0 10px 0 20px; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-}
-
-.about-me{
-    margin:0 10px 0 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-}
-
-
-.contact-me{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-
-.grid-contanier{
+.hero {
     display: grid;
-    grid-template-columns: repeat(12. 1fr);
-    grid-auto-rows: minmax(150px, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-auto-flow: dense;
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
-
-.grid-item{
-border: 5px solid var(--secondary);
-grid-column: span 4;
-background-color:  var(--primary);
-color:  var(--tertiary);
-min-height: 150px;
-background-size: 150%;
-display: flex;
-align-items: flex-end;
-padding: 0 0 20px 0;
-text-decoration: none;
-background-blend-mode: soft-light;
-transition: all 0.5s; 
-font-size: 0.9rem;
+.hero img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    width: 100%;
 }
-
-/*First Item(Child) Feature For Portfolio */
-.grid-item:first-child{
-    grid-column: span 8;
-    grid-row: span 2;
-    
-}
-
-.grid-container{
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;   
-    grid-auto-flow: dense;
-
-/*Dev Ops 12 Column Grid*/
-    grid-template-columns: repeat(12, 1fr);
-    
-/*Sets Eatch Row To Min 150px Tall AND Max of 1fr*/
-    grid-auto-rows: minmax(150px, 1fr);
- 
- }
-
-.grid-item h4 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.5em;
-    background-color: blueviolet;
-    align-items: flex-end;
-    }
-    
-.grid-item p{
-    background-color: forestgreen;
-    position: absolute;
-    margin-top: 50px;
-    }
-
-.grid-item surf{
-  border: 3px solid greenyellow;
-}
-.grid-item:hover{
-    background-color: rgb(red, green, blue);
-}
-
-
-
-
-.hero-banner h2 {
-    background-color: var(--secondary);
-    color: var(--tertiary);
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 2.3rem;
-    line-height: 1.2;
-    display: inline;
-    }
-
-.hero-banner div {
-    flex: 0 0 90%;
-}
-.hero-banner{
-    background: rgb(68, 88, 120,);
-    background-image: url("images\TheThinker.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary)100%);
-    min-height: 30vh;
-    background-size: cover;
-    background-position: center;
-    color: var(--light);
-    padding: 2% 6%;
+.hero-text {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-}
-
-
-
-.page-wrapper{
-    max-width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.page-section{
-    margin: 25px 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
+    margin-top: 90px;
+}
+.hero-text h2 {
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
 }
 
-
-.page-section > h2{
-    flex: 0 0 20%;
+.about-me {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: .70fr 2fr .4fr;
+    grid-template-rows: 1fr;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-top: 15px;
+}
+.about-me h1 {
     text-align: right;
-    padding-right: 15px;
+    border-right: 4px solid black;
+    padding-right: 10px;
+    font-size: 2em;
+}
+.about-me p {
+    grid-column: 2 /3 ;
+    grid-row: 1 / 2;
+    padding-bottom: 10px;
+    margin: 10px;
 }
 
-.page-section > div{
-    flex: 0 0 70%;
+
+
+    /* WORK */
+.work {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;  
+    gap: 10px;
+    grid-template-columns: .70fr 2fr .4fr;  
+    grid-template-rows: 1fr;
+    margin-bottom: 25px;
+}
+.work h1 {
+    text-align: right;
+    border-right: 4px solid black;
+    padding-right: 10px;
+    font-size: 2em;
 }
 
-.page-section > p{
-    margin-bottom: 20px;
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 }
-
-
-.surf-report{
-    border: 2px solid violet;
-    grid-row: 1/3;
-    grid-column: 1/3;
-    background-image: url(images\NodeVectors.jpg);
-    background-size: cover;
-    background-position: center;
+    /* IMAGE 1 STYLES */
+.img-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+}
+.img-1-text-position {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
     position: relative;
+    bottom: 10px;
 }
-
-
-.work-flex{
+    /* IMAGE 2 STYLES */
+.img-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+.img-2-text-position {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     flex-wrap: wrap;
-    justify-content: space-between;
+    position: relative;
+    bottom: 10px;
+}
+    /* IMAGE 3 STYLES */
+.img-3 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.img-3-text-position {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 10px;
+}
+    /* IMAGE 4 STYLES */
+.img-4 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.img-4-text-position {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 10px;
+}
+    /* IMAGE 5 STYLES */
+.img-5 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.img-5-text-position {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 10px;
+}
+.img-border {
+    border: 4px solid red;
+}
+.work-img-text {
+    background-color: red;
+    color: white;
+    padding: 2px;
 }
 
-.work-flex h2 {
-    font-size: 50px;
-    font-family: cursive;
-    border-right: 2px black solid;
+.contact-me {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: .70fr 2fr .4fr;
+    margin-bottom: 25px;
+}
+.contact-me h1 {
     text-align: right;
-    height: 580px;
-    padding: 10px;
-    margin-left: auto;
+    border-right: 4px solid black;
+    padding-right: 10px;
+    font-size: 2em;
 }
 
-
-
-
-
-/*Portfolio Images*/
-
-.run-buddy{
-    background-image: url(../images/TheThinker.jpg);
+.contact-info {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.contact-info a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
-
-.led-wall{
-    background-image: url(images\NodeVectors.jpg);
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .hero-text {
+        margin-top: 20px;
+    }
+    .work-img-text h1 {
+        font-size: 16px;
+    }
+    .work-img-text p {
+        font-size: 14px;
+    }
+    .contact-info a {
+        font-size: 20px;
+    }
 }
-
-
-.react-calc{
-    background-image: url(../images/TheThinker.jpg);
+@media screen and (max-width: 768px) {
+    .work-img-text {
+        padding: 3px;
+    }
+    .work-img-text h3 {
+        font-size: 14px;
+    }
+    .work-img-text p {
+        font-size: 12px;
+    }
 }
-
-.pastel-puzzels{
-    background-image: url(../images/TheThinker.jpg);
-}
-.surf-report{
-    background-image: url(../images/TheThinker.jpg);
+@media screen and (max-width: 575px) {
+    header h1 {
+        margin-bottom: 10px;
+    }
+    header nav ul li a {
+        padding-bottom: 1px;
+    }
+    .work-img-text {
+        padding: 1px 2px;
+    }
+    .work-img-text h1 {
+        font-size: 2px;
+    }
+    .work-img-text p {
+        font-size: 8px;
+    }
+    .contact-info a {
+        margin: 5px;
+    }
 }
