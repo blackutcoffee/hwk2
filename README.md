@@ -9,5 +9,3 @@ Link to repository: github.com:blackutcoffee/hwk2.git
 This Advanced CSS Challenge: Professional Portfolio Expounded Upon Newly Developed Skillsets RE Flexbox, CSS Grid Layout, Media Queries, and CSS Variables.
 
 This Was A Challeg=nging Feat.
-
-ScreenShot: https://github.com/christroy/module2-homework2/issues/1 screenshot submitted into a new issue under issues tab in repository.
